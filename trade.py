@@ -194,7 +194,7 @@ async def ws_orderbook_listener(symbol, session):
 # Auto-trading logic triggered when spread is tight
 async def auto_trade(symbol="BTC_USDT_PERP"):
     global total_traded_volume, total_traded_usd, last_trade_time
-    fixed_order_size   = 0.00371  # target size per leg
+    fixed_order_size   = 0.00037  # target size per leg
     min_trade_size     = 0.00006  # fallback size for illiquid book
     spread_valid_since = None
 
